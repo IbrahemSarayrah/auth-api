@@ -1,1 +1,77 @@
 # auth-api
+
+## LAB - 08
+
+### Author: Ibrahem Sarayrah
+
+### LINKS
+
+* [github action]()
+
+* [github action test]()
+
+* HEROKU Prod : [https://ibrahem--auth-api.herokuapp.com/](https://ibrahem--auth-api.herokuapp.com/)
+
+* pull request : []()
+
+### Setup
+
+* **.env** requirements:
+>
+> PORT=3000
+>
+> DATABASE_URL=postgres://localhost/lab08
+>
+> SECRET=secretstring
+>
+### Running the app
+
+* npm start / nodemon
+
+* Endpoint: `/signin`
+* Endpoint: `/signup`
+* Endpoint: `/users`
+* Endpoint: `/secret`
+* Endpoint: `/api/v1/food`
+* Endpoint: `/api/v1/clothes`
+* Endpoint: `/api/v2/food`
+* Endpoint: `/api/v2/clothes`
+* Returns Objects
+
+```
+
+{
+    "user": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImlicmFoZW0iLCJpYXQiOjE2Mjk3Mzc3ODJ9.QShYT7Ho5yvkFKQrZ3_8SM-U6Zv7ybPQSBis2DRdFbE",
+        "id": 1,
+        "username": "ibrahem",
+        "password": "$2b$10$zfTqBTtCljc8nXK4//83LeNQGxprZr7GE1NrfP53mmlyyv6Kl8FUW",
+        "createdAt": "2021-08-23T16:16:29.871Z",
+        "updatedAt": "2021-08-23T16:16:29.871Z"
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImlicmFoZW0iLCJpYXQiOjE2Mjk3Mzc3ODJ9.QShYT7Ho5yvkFKQrZ3_8SM-U6Zv7ybPQSBis2DRdFbE"
+}
+
+food {
+    "id": 3,
+    "name": "apple",
+    "calories": 10,
+    "type": "fruit",
+    "updatedAt": "2021-08-24T11:09:35.326Z",
+    "createdAt": "2021-08-24T11:09:35.326Z"
+}
+
+clothes {
+    "id": 1,
+    "name": "t-shirt",
+    "color": "white",
+    "size": "L",
+    "createdAt": "2021-08-24T11:10:59.535Z",
+    "updatedAt": "2021-08-24T11:21:45.239Z"
+}
+
+```
+
+### UML
+
+![UML](uml-img/auth-api.png)
