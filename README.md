@@ -24,6 +24,20 @@
 >
 > SECRET=secretstring
 >
+
+## Dependencies and technologies needs to install
+
+* npm init -y
+* npm i dotenv express cors
+* npm i -D jest supertest
+* npm i sequelize
+* npm i sqlite3
+* npm i pg
+* npm i morgan
+* npm i jsonwebtoken
+* npm i bcrypt
+* npm i base-64
+
 ### Running the app
 
 * npm start / nodemon
